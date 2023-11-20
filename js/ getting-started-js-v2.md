@@ -1,11 +1,15 @@
-THREE PILLARS OF JS
+## GET STARTED WITH JS
+### WITH KYLE SIMPSON
+
+### THREE PILLARS OF JS
 i) Types and coersion
 ii) scope and closure
 iii) this/Prototypes
 
-PROGRAMMING PRIMER IN JS
+### INTRODUCTION 
+#### PROGRAMMING PRIMER IN JS
 
-a) Value
+ a) Value
 
 -> 42 and 3.14 in js there's no distinction between the decimal and non-decimal number they're all number
 -> "Hello world " this we call them strings
@@ -50,7 +54,7 @@ speaking of the interpolated mark, sort of the interpolated string
 
 g)
 
-TYPES AND COERSION
+### TYPES AND COERSION
 
 a) Primitive types
 -> not true that everything is like an object
@@ -105,7 +109,7 @@ The point is the if we make the type so obvious, then double equal and tripple e
 
 -> Javascript is dynamically typed language and we could embrace that, including the types and stuffs.
 
-SCOPES AND CLOSURES
+### SCOPES AND CLOSURES
 Rules of scope, if the varable isnt't defined in the function the variable will be found on the outa scope.
 
 if non-strict the variable is undeclared it be created in the global scope.
@@ -137,7 +141,7 @@ var teacher = "suxxy "
 //helps to enapsulate the scope , like if we print the teacher out there the "kyle " // //will //
 be maintained
 
-PERFORM BLOCK SCOPING WITH LET KEYWORD
+#### PERFORM BLOCK SCOPING WITH LET KEYWORD
 
 We use the let keyword so as to protect the varable from the global level modification of variables ,
 
@@ -153,12 +157,12 @@ let blockEl;
 
 }
 
-CLOSURE AFTER UNDERSTANDING SCOPE
+#### CLOSURE AFTER UNDERSTANDING SCOPE
 -> The function that remembers the variables outside of it, even if the function is passed else where.
 
 -> it happens when we pass that function as the value somewhre else, like callback or anything like that .
 
-THIS && PROTOTYPE SYSTEM
+### THIS && PROTOTYPE SYSTEM
 this key word, references the execution context for that call, determine entirely by how the function was called .
 
 Explicit binding -> one function to be reused in different places.
