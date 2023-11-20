@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+
+      .blue-section,
+      .green-section {
+        flex: 1;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .blue-section {
+        background-color: lightblue;
+      }
+
+      .green-section {
+        background-color: lightgreen;
+      }
+
+      .boundary-image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 200px; /* Adjust the width of the image as needed */
+        height: 200px; /* Adjust the height of the image as needed */
+        object-fit: cover;
+        z-index: 1; /* Set a higher z-index than the sections */
+      }
+
+      @media (max-width: 600px) {
+        .boundary-image {
+          width: 150px; /* Adjust for smaller screens */
+          height: 150px; /* Adjust for smaller screens */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="blue-section">
+      <!-- Content of the blue section goes here -->
+    </div>
+
+    <img
+      class="boundary-image"
+      src="https://placekitten.com/400/400"
+      alt="Boundary Image"
+    />
+
+    <div class="green-section">
+      <!-- Content of the green section goes here -->
+    </div>
+  </body>
+</html>
