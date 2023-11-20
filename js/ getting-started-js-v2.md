@@ -28,7 +28,7 @@ iii) this/Prototypes
   -> The plus and whatever that invlolve two oprrands its called the binary operandors, but the !false this is called the unary operator since it invloves only one operandor
 
 c) Typeof
--> Typof [1,2,3] ,returns the "object" as the subtype of an object type
+-> Typof `[1,2,3]` ,returns the "object" as the subtype of an object type
 
 d) Variables
 is the symblic representation of some place where our value are going to be stored, eg
@@ -69,16 +69,16 @@ a) Primitive types
 In javascript we are not talking about the types of varables but the type of the value,
 the typeof , undefined (don't exists) varable is "undefined"
 
--> typeof null gives the "object", named as the historical bug of js.
+-> `typeof null` gives the `"object"`, named as the historical bug of js.
 
 - NaN, not a number
 
-var greeting = "hello class"
-var something = greeting/2
-something beclomes NaN
+`var greeting = "hello class"
+var something = greeting/2`
+`something beclomes NaN`
 
-Number.isNaN (something ) // true
-Number.isNaN (grreting ) //fasle
+`Number.isNaN (something ) // true
+Number.isNaN (grreting ) //fasle`
 
 b) Converting types (Type coersion )
 
@@ -89,14 +89,14 @@ b) Converting types (Type coersion )
 crazzy!!!!! all value properties from the dom are strings, so getting the number wwant to use it we need to coerse it to the number for it to work
 
 -> Boolean
-
+``
 Falsy and Truthy
 0 "foo"
 null "everything else becomes true"
 NaN
 false
 undefined
-empty string
+empty string``
 
 -> Coersion and Best Practices
 
@@ -107,7 +107,7 @@ Double equal allows coersion when the types are'nt the same and the tripple equa
 
 The point is the if we make the type so obvious, then double equal and tripple equal are technically the same thing.
 
--> Javascript is dynamically typed language and we could embrace that, including the types and stuffs.
+-> ``Javascript is dynamically typed language and we could embrace that, including the types and stuffs.``
 
 ### SCOPES AND CLOSURES
 Rules of scope, if the varable isnt't defined in the function the variable will be found on the outa scope.
@@ -121,22 +121,22 @@ FUNCTIONS EXPRESSIONS
 
 Is the function as the values assigned some where, then function is the first class value.
 example
-var clickWhat = functon ()
-{}
+``var clickWhat = functon ()``
+`{}`
 -> this is annonymous function expression
 
-var clicWhat = function hand (){}, this is reffered to as the named function expression
+``var clicWhat = function hand (){}, this is reffered to as the named function expression``
 
 **\* More on name && Unamed function expression **
 
-IIFES
+`IIFES`
 immediately invoked function expression
-var teacher = "kyle"
+``var teacher = "kyle"
 (
 function anotherTecaher () {
 var teacher = "suxxy "
 }
-) ()
+) ()``
 
 //helps to enapsulate the scope , like if we print the teacher out there the "kyle " // //will //
 be maintained
@@ -145,17 +145,17 @@ be maintained
 
 We use the let keyword so as to protect the varable from the global level modification of variables ,
 
-function blockLevel (){
+`` function blockLevel (){
 let name; // name is the functional level variable\
 
-{
+`` {
 let blockEl;
 
 //this isdefined only to this block, hence block level element and not in the whole function.
 
-}
+} ``
 
-}
+}``
 
 #### CLOSURE AFTER UNDERSTANDING SCOPE
 -> The function that remembers the variables outside of it, even if the function is passed else where.
