@@ -1,15 +1,18 @@
 ## GET STARTED WITH JS
+
 ### WITH KYLE SIMPSON
 
 ### THREE PILLARS OF JS
+
 i) Types and coersion
 ii) scope and closure
 iii) this/Prototypes
 
-### INTRODUCTION 
+### INTRODUCTION
+
 #### PROGRAMMING PRIMER IN JS
 
- a) Value
+a) Value
 
 -> 42 and 3.14 in js there's no distinction between the decimal and non-decimal number they're all number
 -> "Hello world " this we call them strings
@@ -57,6 +60,7 @@ g)
 ### TYPES AND COERSION
 
 a) Primitive types
+
 -> not true that everything is like an object
 
 . undefined
@@ -66,8 +70,7 @@ a) Primitive types
 . number
 . symbol
 
-In javascript we are not talking about the types of varables but the type of the value,
-the typeof , undefined (don't exists) varable is "undefined"
+`In javascript we are not talking about the types of varables but the type of the value, the typeof undefined (don't exists) varable is "undefined"`
 
 -> `typeof null` gives the `"object"`, named as the historical bug of js.
 
@@ -89,14 +92,14 @@ b) Converting types (Type coersion )
 crazzy!!!!! all value properties from the dom are strings, so getting the number wwant to use it we need to coerse it to the number for it to work
 
 -> Boolean
-``
+`
 Falsy and Truthy
 0 "foo"
 null "everything else becomes true"
 NaN
 false
 undefined
-empty string``
+empty string`
 
 -> Coersion and Best Practices
 
@@ -107,9 +110,10 @@ Double equal allows coersion when the types are'nt the same and the tripple equa
 
 The point is the if we make the type so obvious, then double equal and tripple equal are technically the same thing.
 
--> ``Javascript is dynamically typed language and we could embrace that, including the types and stuffs.``
+-> `Javascript is dynamically typed language and we could embrace that, including the types and stuffs.`
 
 ### SCOPES AND CLOSURES
+
 Rules of scope, if the varable isnt't defined in the function the variable will be found on the outa scope.
 
 if non-strict the variable is undeclared it be created in the global scope.
@@ -121,22 +125,22 @@ FUNCTIONS EXPRESSIONS
 
 Is the function as the values assigned some where, then function is the first class value.
 example
-``var clickWhat = functon ()``
+`var clickWhat = functon ()`
 `{}`
 -> this is annonymous function expression
 
-``var clicWhat = function hand (){}, this is reffered to as the named function expression``
+`var clicWhat = function hand (){}, this is reffered to as the named function expression`
 
 **\* More on name && Unamed function expression **
 
 `IIFES`
 immediately invoked function expression
-``var teacher = "kyle"
+`var teacher = "kyle"
 (
 function anotherTecaher () {
 var teacher = "suxxy "
 }
-) ()``
+) ()`
 
 //helps to enapsulate the scope , like if we print the teacher out there the "kyle " // //will //
 be maintained
@@ -158,11 +162,13 @@ let blockEl;
 }``
 
 #### CLOSURE AFTER UNDERSTANDING SCOPE
+
 -> The function that remembers the variables outside of it, even if the function is passed else where.
 
 -> it happens when we pass that function as the value somewhre else, like callback or anything like that .
 
 ### THIS && PROTOTYPE SYSTEM
+
 this key word, references the execution context for that call, determine entirely by how the function was called .
 
 Explicit binding -> one function to be reused in different places.
